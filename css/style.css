@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: 'Roboto Flex', sans-serif;
+   
+}
+.home {
+    display: flex;
+    height: 100vh;
+    background-image: url("/imagens/Elevador_Lacerda_Salvador_Bahia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    left:100px;
+    margin: 0px;
+    
+}
+.header {
+    position: sticky;
+    display: flex;
+    padding: 20px ;
+    height: 75px;
+    width: 100vw;
+    background-color: #f1e9e9;
+    align-items: center;
+    justify-content:space-between 
+}
+.content {
+    position: absolute;
+    width: 33%;
+    top:80px ;
+    right: 10px;
+    border: 1px solid blue;
+    border-radius: 10px 50px;
+    box-shadow: -6px 8px 17px 5px rgba(0,0,0,0.74);
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    box-shadow: -9px -9px 8px -4px #000000;
+    border-radius: 50%;
+}
+.nav-bar ul {
+    display: flex;
+    padding: 15px;
+}
+.nav-bar ul li {
+    padding: 15px;
+    list-style: none;
+}
+.nav-bar ul li a {
+    text-decoration: none;
+}
+.container {
+    position: relative;
+    width: vw;
+}
+.about .container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h2 {position: absolute;
+    font-family: 'Raleway', sans-serif;
+    margin:20px;
+    left:40px;
+}
+
+.food {
+    
+    display: block;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+    background-color: #f1e9e9;
+    margin-top:70px;
+    margin-left: 60px;
+   
+
+}
+.fun {
+    
+    display: block;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+    background-color: #f1e9e9;
+    margin-top:70px;
+    
+}
+.party {
+    display: block;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+    background-color: #f1e9e9;
+    margin-top:70px;
+    
+}
+.tourism {
+    display: block;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+    background-color: #f1e9e9;
+    margin-top:70px;
+   
+}
+.tourism .tur {
+    width: 300px;
+    height: 210px;
+}
+.food .plate {
+    width: 300px;
+    height: 210px;
+}
+.fun .toy {
+    width: 300px;
+    height: 210px;
+}
+.party .festa {
+    width: 300px;
+    height: 210px;
+}
+
+p {
+    padding: 15px;
+}
+.sub-title {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+}
+
+h3 {
+    margin-left: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    margin: 20px;
+    margin-left: 40px;
+
+}
+
+.movie {
+    display: flex;
+}
+.movie .video {
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+.gallery {
+    
+    display: flex;
+}
+.gallery .fotos{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+.gallery .fotos .imagem {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 8px;
+}
+
+footer {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    background-color: grey;
+}
+.rodape {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    align-items: center;
+}
+.linkedin {
+    margin-top: 10px;
+    padding: 0 20px;
+}
+.github {
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+@media (max-width: 425px){
+    .content {
+        display: none;
+    }
+    .header {
+        display: none;
+    }
+    .about .container {
+        flex-direction: column;
+    }
+    .gallery .fotos {
+        flex-direction: column;
+        display: block;
+    }
+
+}
+
