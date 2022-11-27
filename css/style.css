@@ -16,10 +16,10 @@ body {
     display: flex;
     min-height: 100vh;
     width: 100vw;
-    background-image: url("./imagens/Elevador_Lacerda_Salvador_Bahia.jpg");
+    background-image: url("/imagens/Elevador_Lacerda_Salvador_Bahia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    
 }
 .about {
     width: 100vw;
@@ -30,8 +30,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: 0;
+    /*justify-content: space-between;*/
 }
 h1 {
     position: absolute;
@@ -54,7 +53,7 @@ h1 {
     position: absolute;
     width: 33%;
     top:80px ;
-    right: 10px;
+    right: 20px;
     border: 1px solid blue;
     border-radius: 10px 50px;
     box-shadow: -6px 8px 17px 5px rgba(0,0,0,0.74);
@@ -100,6 +99,7 @@ h2 {
     height: 450px;
     background-color: #f1e9e9;
     margin-top:70px;
+   
     
    
 
@@ -112,6 +112,9 @@ h2 {
     height: 450px;
     background-color: #f1e9e9;
     margin-top:70px;
+   
+   
+   
     
 }
 .party {
@@ -122,6 +125,7 @@ h2 {
     background-color: #f1e9e9;
     margin-top:70px;
     
+    
 }
 .tourism {
     display: block;
@@ -130,6 +134,7 @@ h2 {
     height: 450px;
     background-color: #f1e9e9;
     margin-top:70px;
+    
    
 }
 .tourism .tur {
@@ -192,7 +197,7 @@ h4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    align-items: center;
    
 }
 
@@ -248,10 +253,73 @@ footer {
     .about .container {
         display: flex;
         flex-direction: column;
+        justify-items: center;
+        margin: 0 20px;
+        width: 100vw;
+        
     }
 }
 @media(max-width:600px) {
     .movie .video .video1 {
-        width: 350px;
+        width: 400px;
     }
 }
+@media (max-width: 400px){
+    h2{
+        margin-top: 40px;
+    }
+}
+    @media (max-width: 530px) {
+        .gallery .fotos .imagem {
+            width: 550px;
+        }
+        .tourism {
+            display: block;
+            justify-content: center;
+            width: 380px;
+            height: 450px;
+            background-color: #f1e9e9;
+            margin-top:70px;
+        }
+        .tourism .tur {
+            width: 380px;
+        }
+
+        .party {
+            display: block;
+            justify-content: center;
+            width: 380px;
+            height: 450px;
+            background-color: #f1e9e9;
+            margin-top:70px;
+        }
+        .party .festa {
+            width: 380px;
+        }
+        .fun {
+    
+            display: block;
+            justify-content: center;
+            width: 380px;
+            height: 450px;
+            background-color: #f1e9e9;
+            margin-top:70px;  
+        }
+        .fun .toy {
+            width: 380px;
+        }
+        .food {
+    
+            display: block;
+            justify-content: center;
+            width: 380px;
+            height: 450px;
+            background-color: #f1e9e9;
+            margin-top:70px;
+        
+        }
+        .food .plate {
+            width: 380px;
+        }
+    }
+    
