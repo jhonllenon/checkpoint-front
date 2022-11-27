@@ -16,7 +16,7 @@ body {
     
     display: flex;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     background: url(../imagens/Elevador_Lacerda_Salvador_Bahia.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -24,14 +24,15 @@ body {
 }
 
 .about {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
 }
 .about .container {
     display: flex;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 h1 {
@@ -42,11 +43,10 @@ h1 {
     
 }
 .header {
-    position: sticky;
+    min-width: 100vw;
     display: flex;
     padding: 20px ;
     height: 75px;
-    width: 100vw;
     background-color: #f1e9e9;
     align-items: center;
     justify-content:space-between 
@@ -190,7 +190,7 @@ h4 {
     
 } 
 .gallery {
-    width: 100vw;
+    width: 100%;
     display: flex;
 }
 .gallery .fotos{
@@ -211,10 +211,9 @@ h4 {
 }
 
 footer {
-    position: absolute;
     justify-content: center;
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     background-color: grey;
 }
@@ -233,17 +232,12 @@ footer {
     padding: 0 20px;
 }
 
-.branco {
-    height: 100vh;
-}
 @media(max-width:650px) {
     .nav-bar ul {
         display: none;
     }
     .content {
-        display: flex;
-        position: absolute;
-        width: auto;
+        display: none;
     }
 }
 @media (max-width:550px){
@@ -251,81 +245,63 @@ footer {
         font-size:25px;
     }
 }
-@media(max-width:700px) {
+@media(max-width:425px) {
     .about .container {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
         display: flex;
         flex-direction: column;
         justify-items: center;
         margin: 0 20px;
-        width: 100vw;
+        width: 100%;
         
     }
+    
 }
-@media(max-width:600px) {
-    .movie .video .video1 {
-        width: 400px;
+@media (max-width:540px){
+    footer {
+        width: 500px;
+        align-items: center;
+    }
+    .header {
+        width: 500px;
+    }
+    .home {
+        width: 500px;
     }
 }
-@media (max-width: 400px){
+@media(max-width:425px) {
+    .movie .video .video1 {
+        width: 300px;
+    }
+    .movie .video {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+@media (max-width: 425px){
     h2{
         margin-top: 40px;
     }
 }
-    @media (max-width: 530px) {
+    @media (max-width: 425px) {
         .gallery .fotos .imagem {
-            width: 550px;
-        }
-        .tourism {
-            display: block;
+            align-items: center;
             justify-content: center;
-            width: 380px;
-            height: 450px;
-            background-color: #f1e9e9;
-            margin-top:70px;
-            left: 0;
+            text-align: center;
         }
-        .tourism .tur {
-            width: 380px;
-        }
-
-        .party {
-            display: block;
+        .gallery .fotos {
+            align-items: center;
+            display: flex;
+            justify-items: center;
             justify-content: center;
-            width: 380px;
-            height: 450px;
-            background-color: #f1e9e9;
-            margin-top:70px;
-            left: 0;
+            text-align: center;
+            flex-direction: column;
+            margin: 0 auto;
         }
-        .party .festa {
-            width: 380px;
-        }
-        .fun {
-    
-            display: block;
-            justify-content: center;
-            width: 380px;
-            height: 450px;
-            background-color: #f1e9e9;
-            margin-top:70px; 
-            left: 0; 
-        }
-        .fun .toy {
-            width: 380px;
-        }
-        .food {
-    
-            display: block;
-            justify-content: center;
-            width: 380px;
-            height: 450px;
-            background-color: #f1e9e9;
-            margin-top:70px;
-            left: 0;
-        
-        }
-        .food .plate {
-            width: 380px;
-        }
+      
     }
     
