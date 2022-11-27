@@ -282,6 +282,7 @@ footer {
             height: 450px;
             background-color: #f1e9e9;
             margin-top:70px;
+            left: 0;
         }
         .tourism .tur {
             width: 380px;
@@ -294,6 +295,7 @@ footer {
             height: 450px;
             background-color: #f1e9e9;
             margin-top:70px;
+            left: 0;
         }
         .party .festa {
             width: 380px;
@@ -305,7 +307,8 @@ footer {
             width: 380px;
             height: 450px;
             background-color: #f1e9e9;
-            margin-top:70px;  
+            margin-top:70px; 
+            left: 0; 
         }
         .fun .toy {
             width: 380px;
@@ -318,6 +321,7 @@ footer {
             height: 450px;
             background-color: #f1e9e9;
             margin-top:70px;
+            left: 0;
         
         }
         .food .plate {
