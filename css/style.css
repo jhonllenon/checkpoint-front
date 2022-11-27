@@ -16,7 +16,7 @@ body {
     display: flex;
     min-height: 100vh;
     width: 100vw;
-    background-image: url("/imagens/Elevador_Lacerda_Salvador_Bahia.jpg");
+    background-image: url("./imagens/Elevador_Lacerda_Salvador_Bahia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
