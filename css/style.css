@@ -11,10 +11,23 @@ body {
 .home {
     display: flex;
     height: 100vh;
+    width: 100vw;
     background-image: url("/imagens/Elevador_Lacerda_Salvador_Bahia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+.about {
+    width: 100vw;
+    height: 100vh;
+}
+.about .container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
 }
 h1 {
     position: absolute;
@@ -61,20 +74,10 @@ h1 {
 .nav-bar ul li a {
     text-decoration: none;
 }
-.container {
-    position: relative;
-    width: vw;
-}
-.about .container{
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 h2 {position: absolute;
     font-family: 'Raleway', sans-serif;
-    margin:20px;
-    left:40px;
+    margin:20px 10px;
 }
 
 .food {
@@ -85,7 +88,7 @@ h2 {position: absolute;
     height: 450px;
     background-color: #f1e9e9;
     margin-top:70px;
-    margin-left: 60px;
+    
    
 
 }
@@ -144,30 +147,31 @@ p {
 }
 
 h3 {
-    margin-left: 40px;
     font-family: 'Raleway', sans-serif;
+    margin: 20px 10px;
 }
 
 h4 {
     font-family: 'Raleway', sans-serif;
-    margin: 20px;
-    margin-left: 40px;
-
+    margin: 20px 10px;
+   
 }
 
 .movie {
     display: flex;
 }
 .movie .video {
-    text-align: center;
+   
     margin: 0 auto;
     height: 100vh;
 }
 .gallery {
-    
+    width: 100vw;
+    height: 800px;
     display: flex;
 }
 .gallery .fotos{
+    
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -183,7 +187,7 @@ h4 {
 }
 
 footer {
-    position: absolute;
+    position: sticky;
     justify-content: center;
     display: flex;
     width: 100vw;
@@ -205,20 +209,9 @@ footer {
     padding: 0 20px;
 }
 
-@media (max-width: 425px){
-    .content {
-        display: none;
+@media(max-width:425) {
+    .home {
+        background: cover;
+        justify-content: center;
     }
-    .header {
-        display: none;
-    }
-    .about .container {
-        flex-direction: column;
-    }
-    .gallery .fotos {
-        flex-direction: column;
-        display: block;
-    }
-
 }
-
